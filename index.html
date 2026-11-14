@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Remote Work Experience Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the remote work environment.
+</p>
+<form action="" method="POST" id="survey-form">
+  <fieldset>
+    <legend>Personal Details</legend>
+      <label for="name" id="name-label">Name (required):</label>
+  <input type="text" id="name" name="name" placeholder="enter your name" required/>
+  <label for="email" id="email-label">Email address(required):</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required/>
+    <label for="age" id="number-label">Age(optional):</label>
+    <input type="number"name="age" id="number" min="18" max="60" placeholder="age"/>
+</fieldset>
+<fieldset>
+  <legend>Do you currently work?</legend>
+  <input type="radio" id="yes-option" name="is-working" value="yes"/>
+  <label for="yes-option">Yes</label>
+  <input type="radio" id="no-option" name="is-working" value="no"/><label for="no-option">No</label>
+  </fieldset>
+    <fieldset>
+    <legend>Would you recommend remote work to a friend?</legend>
+    <input type="radio" id="definitly" name="choice" value="definitly">
+    <label for="definitly">Definitly</label>
+    <input type="radio" id="may-be" name="choice" value="may-be">
+    <label for="may-be">May-be</label>
+    <input type="radio" id="not-sure" name="choice" value="not-sure">
+    <label for="not-sure">Not sure</label>
+      </fieldset>
+      <fieldset>
+  <legend>What do you like about remote work?</legend>
+        <input type="checkbox" id="flexible-schedule" name="choice" value="flexible-schedule">
+        <label for="flexible-schedule">Flexible-Schedule</label>
+        <input type="checkbox" id="no-commute" name="no-commute" value="no-commute">
+        <label for="no-commute">No Commute</label>
+        <input type="checkbox" id="custom-workspace" name="choice" value="custom-workspace">
+        <label for="custom-workspace">Custom Workspace</label>
+        <input type="checkbox" id="better-work-life-balance" name="better-work-life-balance" value="better-work-life-balance">
+        <label for="better-work-life-balance">Better Work-Life Balance</label>
+              </fieldset>
+      <fieldset>
+        <label for="remote">Which option best discribes your current role?</label>
+        <select name="full-time" id="dropdown">
+        <option value="full-time">Full-time</option>
+        <option value="part-time">Part-time</option>
+        <option value="remote-work">Remote-Work</option>
+        <option value="student" >Student</option></select>
+        </fieldset>
+          <label for="comments" >Any suggestions or challenges you want to share?</label>
+
+          <textarea cols="30" rows="9"name="comments"id="comments" placeholder="Enter your comment here...
+"></textarea>
+          <button id="submit" type="submit">Submit</button>
+          
+
+
+  </form>
+  </body>
+</html>
